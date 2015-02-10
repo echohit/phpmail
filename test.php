@@ -12,7 +12,7 @@
 
 	header('Content-Type: text/html; charset='.$charset);
 
-	$from = "hexiaoyuhit@163.com";
+	$from = "test@163.com";
 	$title = "Hi echo";
 	$content = "This is a test";
 	$to = "test@163.com";
@@ -25,7 +25,7 @@
 	$mail->FromName = "echo"; //设置发件人的姓名
 	$mail->SMTPAuth = true; //设置SMTP是否需要密码验证，true表示需要
 	$mail->Username = $from; //设置发送邮件的邮箱
-	$mail->Password = "haha"; //设置邮箱的密码
+	$mail->Password = "password"; //设置邮箱的密码
 	$mail->Subject = $title; //设置邮件的标题
 	$mail->AltBody = "text/html"; // optional, comment out and test
 	$mail->Body = $content; //设置邮件内容
